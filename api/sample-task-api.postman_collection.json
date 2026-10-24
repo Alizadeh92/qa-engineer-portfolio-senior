@@ -1,0 +1,84 @@
+{
+  "info": {
+    "name": "QA Portfolio — Task API Contract Examples",
+    "description": "Illustrative requests only. baseUrl is a placeholder. Adapt tests to the authorized test API contract before running.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "https://api.example.test"},
+    {"key": "taskId", "value": "123"}
+  ],
+  "item": [
+    {
+      "name": "GET task by ID — contract-neutral checks",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "Accept", "value": "application/json"}],
+        "url": "{{baseUrl}}/tasks/{{taskId}}",
+        "description": "Placeholder endpoint. Add contract-specific assertions after configuring an authorized test service."
+      },
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "pm.test('Response time is below the demo threshold', function () {",
+            "  pm.expect(pm.response.responseTime).to.be.below(2000);",
+            "});",
+            "pm.test('Response has a content type header', function () {",
+            "  pm.expect(pm.response.headers.has('Content-Type')).to.be.true;",
+            "});"
+          ]
+        }
+      }]
+    },
+    {
+      "name": "POST create task — sample request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"},
+          {"key": "Accept", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Portfolio demo task\",\n  \"description\": \"Synthetic test data\"\n}",
+          "options": {"raw": {"language": "json"}}
+        },
+        "url": "{{baseUrl}}/tasks",
+        "description": "Use only in an authorized non-production environment. Change payload and expected statuses to match the API contract."
+      },
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "pm.test('Response is in the documented success range for this API', function () {",
+            "  pm.expect([200, 201, 202]).to.include(pm.response.code);",
+            "});"
+          ]
+        }
+      }]
+    },
+    {
+      "name": "GET nonexistent task — negative scenario template",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "Accept", "value": "application/json"}],
+        "url": "{{baseUrl}}/tasks/does-not-exist-portfolio-demo",
+        "description": "Negative scenario template. Expected status and error schema must be confirmed against the contract."
+      },
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "pm.test('Response is not a successful 2xx response', function () {",
+            "  pm.expect(pm.response.code).to.be.at.least(400);",
+            "});"
+          ]
+        }
+      }]
+    }
+  ]
+}
