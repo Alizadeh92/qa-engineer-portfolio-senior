@@ -47,10 +47,22 @@ Supporting examples:
 - [SQL and data-consistency checks](airhead-atpl/sql-validation.md)
 - [API validation approach (sanitised examples)](airhead-atpl/api-validation.md)
 - [Release risk assessment](airhead-atpl/release-assessment.md)
-- [Risk register and P0/P1/P2 prioritisation](strategy/risk-register.md)
+- [Risk register and P0/P1/P2/P3 prioritisation](strategy/risk-register.md)
 - [Cross-platform test matrix](mobile/mobile-test-matrix.md)
 - [iOS and Android-specific test scenarios](mobile/ios-android-specific-testing.md)
 - [Mobile performance and observability](mobile/performance-observability.md)
+
+## Additional demo track: API and QA process examples
+
+The following documents are **generic portfolio exercises**, separate from the Airhead ATPL case study. They use a fictional task-management product and illustrative data; they are not claims about Airhead ATPL or any employer's production system.
+
+- [Generic API testing strategy](api/api-testing-strategy.md)
+- [Runnable Postman Echo smoke collection](api/postman-echo-smoke.postman_collection.json) — uses the public Postman Echo service, not a private product API
+- [Illustrative execution summary with sample results](reporting/illustrative-execution-summary.md)
+- [SQL investigation examples](database/sql-investigation.md)
+- [Exploratory testing charters](test-design/exploratory-charters.md)
+- [Release criteria checklist](strategy/release-criteria.md)
+- [Defect report template](defects/defect-report-template.md)
 
 ## Tools
 
@@ -67,4 +79,4 @@ For dates and the complete employment history, please refer to my CV.
 
 ## About the examples
 
-The portfolio uses a real product domain and the types of testing I have worked with. The documents are **sanitised portfolio examples**: detailed test data, example defects, and release conclusions are written for demonstration and must not be interpreted as records of actual production incidents. No confidential company data, private URLs, credentials or customer information are included.
+The Airhead ATPL section is a sanitised case study based on the product domain and types of testing I have worked with. Detailed test data, example defects, and release conclusions are written for demonstration and must not be interpreted as records of actual production incidents. The separate demo track is fictional and illustrative. No confidential company data, private URLs, credentials or customer information are included.
