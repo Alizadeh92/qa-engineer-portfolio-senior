@@ -1,4 +1,4 @@
-# Alimukhtar Alizada — Manual QA Engineer
+# Alimukhtar Alizada — QA Engineer
 
 **Manual QA · Web · iOS/Android · API · SQL · Offline-first products**
 
