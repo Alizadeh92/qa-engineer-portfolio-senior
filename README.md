@@ -1,43 +1,52 @@
-# QA Engineer Portfolio — Senior-Level Demonstration
+# Alimukhtar Alizada — Manual QA Engineer
 
-**Senior Manual QA | Mobile · Web · REST API · SQL · Risk-Based Testing**
+**Manual QA · Web · iOS/Android · API · SQL · Offline-first products**
 
-> **Portfolio disclaimer:** This repository is a demonstration of QA methods and documentation. The sample application, test results, defects, metrics, and release decisions are illustrative—not claims about real employer projects or production incidents. Replace placeholders and only publish material you are authorized to share.
+I’m a QA Engineer with 6+ years of experience testing web, desktop and mobile products. My work has included functional and regression testing, exploratory testing, API and database checks, and investigating issues that appear when application state changes across devices or network conditions.
 
-## Profile
-QA Engineer focused on product quality, risk-based test planning, exploratory testing, mobile/web behavior, REST API validation, and database consistency. This portfolio demonstrates how I structure quality work from requirements and risk analysis through execution, defect triage, and release recommendation.
+This portfolio focuses on a product area I know well: **testing an ATPL learning application across mobile and web, including offline use and content synchronization**. It shows how I approach risk, turn uncertain behaviour into test scenarios, report defects clearly, and communicate release risk.
 
-## Quality engineering capabilities
-- Risk-based test strategy, scope definition, entry/exit criteria, and release risk communication
-- Requirements review, ambiguity analysis, acceptance criteria, and testability feedback
-- Functional, regression, smoke, exploratory, integration, compatibility, and acceptance testing
-- iOS/Android lifecycle, offline mode, synchronization, data integrity, and cross-platform parity
-- REST API contract validation, negative testing, authorization checks, pagination, idempotency, and error handling
-- SQL investigation, relational integrity checks, duplicate/orphan detection, and reconciliation
-- Defect triage: severity vs. priority, impact analysis, evidence quality, and retest/regression decisions
-- Collaboration with product, engineering, support, and stakeholders
+## What I bring
 
-## Repository map
-| Area | Contents |
-|---|---|
-| `strategy/` | Quality strategy, risk register, release criteria |
-| `requirements/` | Requirements review and acceptance criteria examples |
-| `test-design/` | Test cases, exploratory charters, regression selection |
-| `mobile/` | Mobile/offline/synchronization test matrix |
-| `api/` | API strategy, contract cases, Postman collection |
-| `database/` | SQL investigation and data consistency examples |
-| `defects/` | Example defect reports and triage guide |
-| `reporting/` | Example test summary and release recommendation |
-| `metrics/` | Practical QA metrics with interpretation caveats |
+- Manual testing of web, desktop, iOS and Android applications
+- Functional, regression, integration, exploratory and end-to-end testing
+- Offline behaviour, content downloads, synchronization and data consistency
+- REST API checks with Postman/Swagger and supporting SQL investigation
+- HTTP/HTTPS traffic inspection with Charles Proxy
+- Clear defect reports, evidence collection, retesting and regression selection
+- QA coordination, including distributing work and reviewing coverage across a team of three QA engineers
+- Supporting UI checks with Python, Selenium WebDriver and PyTest where useful
 
-## How to review this portfolio
-1. Start with `strategy/quality-strategy.md` and `strategy/risk-register.md`.
-2. Review the test-design and mobile scenarios to see how risks become executable tests.
-3. Import `api/sample-task-api.postman_collection.json` into Postman. Configure the placeholder URL for an authorized test service before running it.
-4. Review SQL examples against a demo database schema.
-5. Read the sample release report and note how it communicates residual risk rather than claiming that testing proves a product is defect-free.
+## Featured case study: Airhead ATPL
 
-## Professional integrity
-- All sample defects, outcomes, counts, and metrics are explicitly illustrative.
-- No employer names, private URLs, credentials, customer data, or proprietary artifacts are included.
-- Do not present hypothetical metrics as measured project results.
+The case study is organised around practical questions a QA engineer needs to answer:
+
+1. What can go wrong when a learner downloads study content and then uses the app without a stable connection?
+2. How should the app behave if a download or synchronization is interrupted?
+3. How can we check that the same content and progress remain consistent across sessions and platforms?
+4. Which risks deserve attention before a release, and what evidence should a defect report contain?
+
+**[Read the Airhead ATPL case study](airhead-atpl/README.md)**
+
+Supporting examples:
+- [Test cases: offline mode and synchronization](airhead-atpl/test-cases.md)
+- [Example bug reports](airhead-atpl/bug-reports.md)
+- [SQL and data-consistency checks](airhead-atpl/sql-validation.md)
+- [Release risk assessment](airhead-atpl/release-assessment.md)
+
+## Tools
+
+Jira · TestRail · Postman · Swagger · SQL/MySQL · Charles Proxy · Chrome DevTools · BrowserStack · Git · Selenium WebDriver · PyTest
+
+## Experience
+
+- **SUPO — QA Engineer:** financial web workflows including invoices, credit notes, bank transactions, matching, allocations, reports and audit history.
+- **Airhead ATPL — QA Engineer:** web, desktop and iOS/Android testing, including offline workflows, content downloads and synchronization.
+- **Red Rift, Inc. — QA Engineer:** manual web/mobile testing, API and client-server scenarios, regression and exploratory testing.
+- **XCritical Software — QA Engineer:** manual and supporting automated web testing, test design, defect investigation and retesting.
+
+For dates and the complete employment history, please refer to my CV.
+
+## About the examples
+
+The portfolio uses a real product domain and the types of testing I have worked with. The documents are **sanitised portfolio examples**: detailed test data, example defects, and release conclusions are written for demonstration and must not be interpreted as records of actual production incidents. No confidential company data, private URLs, credentials or customer information are included.
