@@ -7,7 +7,7 @@ These examples are adapted from UI test code I wrote for an ATPL question-bank w
 - Used **Python, Selenium WebDriver and PyTest**.
 - Organised UI access through page objects and a reusable element wrapper.
 - Signed in to the application and opened practice-test configuration for a subject and its topics.
-- Selected the BGS question source, read the displayed question count and extracted the numeric value.
+- Selected the question source, read the displayed question count and extracted the numeric value.
 - Repeated the collection across 13 subjects and their individual topics.
 - Stored collected values in MySQL for later inspection.
 
