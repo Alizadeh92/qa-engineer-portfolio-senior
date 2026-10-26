@@ -19,5 +19,8 @@ Keep request/response examples, environment, test data, timestamps, and correlat
 ## Exit considerations
 Prioritize unresolved security, data-loss, duplicate-write, and critical workflow risks over raw pass rate. Document untested endpoints and residual risk.
 
-## Postman collection
-`sample-task-api.postman_collection.json` is illustrative. Configure `baseUrl`, credentials, and assertions according to an authorized API's actual contract before execution.
+## Runnable smoke-test example
+
+The [Postman Echo smoke collection](postman-echo-smoke.postman_collection.json) is a small, runnable demonstration of sending a GET request and checking the response with Postman tests. It calls the public Postman Echo service; it does **not** test an application API or prove business behaviour. Import the JSON into Postman and run the collection with network access enabled.
+
+For product-specific API testing, replace the example with an authorized non-production endpoint and assertions derived from the actual API contract. Never commit credentials or production customer data.
