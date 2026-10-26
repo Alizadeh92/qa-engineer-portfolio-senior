@@ -26,9 +26,9 @@ class PracticePage:
             locator='select[value="All"]',
             locator_type="css",
         )
-        self.bgs_question_source = WebElement(
+        self.question_source_option = WebElement(
             driver,
-            locator='div[value="BGS"]',
+            locator="div.question-source-option",
             locator_type="css",
         )
         self.question_count = WebElement(
