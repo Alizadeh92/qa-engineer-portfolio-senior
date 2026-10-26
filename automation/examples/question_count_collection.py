@@ -17,13 +17,13 @@ def extract_question_count(displayed_text):
 
 
 def read_question_count(driver, subject_code, topics):
-    """Open practice configuration, choose BGS and read the displayed count."""
+    """Open practice configuration, choose the question source and read the displayed count."""
     page = PracticePage(driver, subject_code, topics)
     page.open()
 
     page.question_source_dropdown.click()
-    page.bgs_question_source.get_element()
-    page.bgs_question_source.click()
+    page.question_source_option.get_element()
+    page.question_source_option.click()
 
     displayed_text = page.question_count.get_text()
     return extract_question_count(displayed_text)
