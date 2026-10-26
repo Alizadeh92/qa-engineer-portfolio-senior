@@ -34,6 +34,10 @@ Supporting examples:
 - [SQL and data-consistency checks](airhead-atpl/sql-validation.md)
 - [API validation approach (sanitised examples)](airhead-atpl/api-validation.md)
 - [Release risk assessment](airhead-atpl/release-assessment.md)
+- [Risk register and P0/P1/P2 prioritisation](strategy/risk-register.md)
+- [Cross-platform test matrix](mobile/mobile-test-matrix.md)
+- [iOS and Android-specific test scenarios](mobile/ios-android-specific-testing.md)
+- [Mobile performance and observability](mobile/performance-observability.md)
 
 ## Tools
 
