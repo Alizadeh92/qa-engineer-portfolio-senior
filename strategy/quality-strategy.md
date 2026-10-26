@@ -13,13 +13,13 @@ Protect critical user journeys, data integrity, authorization boundaries, and tr
 ## 3. Risk model
 Rank risks using impact and likelihood, then refine by exposure, detectability, data sensitivity, and recovery cost. Reassess when requirements, architecture, dependencies, or incident history change. High-priority risks should have explicit mitigations and evidence.
 
-Suggested priority bands:
-- **P0 / Critical risk:** data loss/corruption, broad outage, critical workflow unavailable
-- **P1 / High risk:** core workflow broken, significant user group affected, no reasonable workaround
-- **P2 / Moderate risk:** degraded or limited workflow with workaround
-- **P3 / Low risk:** cosmetic or low-impact behavior
+Use the same illustrative priority bands as the portfolio risk register:
+- **P0 / Critical:** credible risk of major data loss/corruption, security or privacy breach, or a core journey being unusable for a broad set of users. Escalate immediately; release requires an explicit risk-owner decision.
+- **P1 / High:** an important workflow is broken or unreliable, with material user impact and no acceptable workaround. Fix and retest before release where feasible; document any accepted exception.
+- **P2 / Medium:** limited impact or a degraded workflow with a reasonable workaround. Assess scope and regression risk; deferral needs an owner and follow-up plan.
+- **P3 / Low:** cosmetic or low-impact behaviour with little effect on task completion. Fix based on user impact and available capacity.
 
-These are triage aids, not substitutes for team policy.
+These are triage aids, not substitutes for a team's formal policy.
 
 ## 4. Test layers
 - **Developer checks:** unit and component tests owned primarily by engineering
