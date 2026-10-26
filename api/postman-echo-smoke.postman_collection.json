@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Public API Smoke Test — Postman Echo",
+    "description": "A small runnable portfolio demo. Uses the public Postman Echo service only; it does not test a private product API or demonstrate product-specific business rules. No credentials are required.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET echo endpoint and validate response",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://postman-echo.com/get?portfolio=manual-qa",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "portfolio",
+              "value": "manual-qa"
+            }
+          ]
+        },
+        "description": "Sends a GET request and checks HTTP status, response structure, and query parameter echo."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test('Response is valid JSON', function () {",
+              "    pm.response.to.be.json;",
+              "});",
+              "",
+              "pm.test('Response includes the expected echoed query parameter', function () {",
+              "    const body = pm.response.json();",
+              "    pm.expect(body).to.have.property('args');",
+              "    pm.expect(body.args.portfolio).to.eql('manual-qa');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "response": []
+    }
+  ]
+}
