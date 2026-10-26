@@ -42,6 +42,7 @@ The case study is organised around practical questions a QA engineer needs to an
 **[Read the Airhead ATPL case study](airhead-atpl/README.md)**
 
 Supporting examples:
+- [UI automation code samples — Python, Selenium, PyTest](automation/README.md)
 - [Test cases: offline mode and synchronization](airhead-atpl/test-cases.md)
 - [Example bug reports](airhead-atpl/bug-reports.md)
 - [SQL and data-consistency checks](airhead-atpl/sql-validation.md)
