@@ -32,6 +32,7 @@ Supporting examples:
 - [Test cases: offline mode and synchronization](airhead-atpl/test-cases.md)
 - [Example bug reports](airhead-atpl/bug-reports.md)
 - [SQL and data-consistency checks](airhead-atpl/sql-validation.md)
+- [API validation approach (sanitised examples)](airhead-atpl/api-validation.md)
 - [Release risk assessment](airhead-atpl/release-assessment.md)
 
 ## Tools
