@@ -17,6 +17,19 @@ This portfolio focuses on a product area I know well: **testing an ATPL learning
 - QA coordination, including distributing work and reviewing coverage across a team of three QA engineers
 - Supporting UI checks with Python, Selenium WebDriver and PyTest where useful
 
+## QA Leadership & Team Coordination
+
+My experience includes coordinating QA work across a team of three engineers, with a focus on clear priorities, test coverage and release confidence.
+
+- **Task coordination:** helped distribute testing activities according to priorities and product risks.
+- **Test coverage review:** reviewed coverage and identified gaps in important user journeys and regression scenarios.
+- **Defect investigation:** supported analysis of complex issues by bringing together reproduction steps, logs, API evidence and data checks where relevant.
+- **Regression planning:** helped focus regression testing on changed areas and high-risk workflows.
+- **Release support:** contributed testing results and known risks to release-readiness discussions.
+- **Cross-platform consistency:** coordinated checks across mobile and web experiences where behaviour or persisted data could differ.
+
+This section describes hands-on QA coordination and team collaboration; it does not imply formal people-management responsibility.
+
 ## Featured case study: Airhead ATPL
 
 The case study is organised around practical questions a QA engineer needs to answer:
