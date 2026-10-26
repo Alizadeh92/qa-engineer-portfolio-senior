@@ -1,15 +1,15 @@
-# Sample Test Summary — Illustrative Only
+# Sample Test Summary — Reusable Template
 
-**Product:** Demo Task Management App  
+**Product:** [Product or feature]  
 **Build:** [Build identifier]  
 **Environment:** [QA/UAT environment]  
 **Test window:** [Start–end]  
 **Prepared by:** [Name]
 
-> The counts and outcomes below are placeholders. Replace them with actual execution evidence before sharing as a project report.
+> This file is a blank template. Replace every placeholder with actual execution evidence before using it for a real project report. For a filled fictional example, see [Illustrative Execution Summary](illustrative-execution-summary.md).
 
 ## Executive summary
-Testing focused on critical task workflows, search/filter behavior, API validation, data integrity, and mobile synchronization. This sample report illustrates how to communicate evidence and residual risk.
+[Briefly describe scope, outcome, main risks and release recommendation.]
 
 ## Execution snapshot
 | Status | Count |
