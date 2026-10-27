@@ -63,4 +63,13 @@ Jira · TestRail · Postman · Swagger · SQL/MySQL · Charles Proxy · Chrome D
 
 For dates and the complete employment history, please refer to my CV.
 
+
+## Contact
+
+- **Email:** [alizadali175@gmail.com](mailto:alizadali175@gmail.com)
+- **Phone:** [+994 (50) 581 65 79](tel:+994505816579)
+- **Telegram:** [@Alzadehal1](https://t.me/Alzadehal1)
+- **LinkedIn:** [linkedin.com/in/alizadehalim](https://www.linkedin.com/in/alizadehalim)
+- **GitHub:** [Alizadeh92](https://github.com/Alizadeh92)
+
 *Portfolio examples are sanitised or illustrative where indicated. They do not include confidential company data, private URLs, credentials or customer information.*
